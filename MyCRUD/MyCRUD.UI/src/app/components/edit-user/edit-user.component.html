@@ -1,0 +1,179 @@
+<style>
+.button-40 {
+  background-color: #da1e1e;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  margin-left: 10px;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.button-41 {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  margin-left: 10px;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.button-40:hover {
+  background-color: #7d1e1e;
+}
+
+.button-40:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-41:hover {
+  background-color: #374151;
+}
+
+.button-41:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.button-42 {
+  background-color: #298e46;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  margin-left: 10px;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.button-42:hover {
+  background-color: #184f27;
+}
+
+.button-42:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-40 {
+    padding: .2rem 0.5rem;
+  }
+
+  .button-41 {
+    padding: .2rem 0.5rem;
+  }
+
+  .button-42 {
+    padding: .2rem 0.5rem;
+  }
+}
+.div-1{
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    padding-bottom: 10px;
+  }
+
+  .div-2{
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    padding-bottom: 20px;
+  }
+
+.h2-1{
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  color: #111827;
+  line-height: 1.5rem;
+}
+.input-1{
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  color: #111827;
+}
+.input-1::placeholder{
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  color: #111827b9;
+}
+.input-1::content{
+    margin-left: 10px;
+}
+</style>
+<div *ngIf="user">
+    <h2 class="h2-1">{{user.firstName + " " + user.lastName}}</h2>
+    <div class="div-1">
+        Nombre:
+        <input class="input-1" [(ngModel)]="user.firstName" placeholder="Nombre"/>
+    </div>
+    <div class="div-1">
+        Apellido:
+        <input class="input-1" [(ngModel)]="user.lastName" placeholder="Apellido"/>
+    </div>
+    <div class="div-1">
+        Tipo de Documento:
+        <input class="input-1" [(ngModel)]="user.docType" placeholder="Tipo de Documento"/>
+    </div>
+    <div class="div-1">
+        Numero de Documento:
+        <input class="input-1" [(ngModel)]="user.docNum" placeholder="Numero de Documento"/>
+    </div>
+    <div class="div-1">
+        Estado:
+        <input class="input-1" [(ngModel)]="user.estate" placeholder="Estado"/>
+    </div>
+    <div class="div-2">
+        Fecha de Inicio:
+        <p *ngIf="!user.id">{{user.startDate}}</p>
+        <input class="input-1" *ngIf="user.id" [(ngModel)]="user.startDate" placeholder="Fecha de Inicio"/>
+    </div>
+    <button class="button-41" (click)="updateUser(user)" *ngIf="user.id">Actualizar</button>
+    <button class="button-40" (click)="deleteUser(user)" *ngIf="user.id">Eliminar</button>
+    <button class="button-42" (click)="createUser(user)" *ngIf="!user.id">Crear</button>
+</div>
